@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+html {
+    display: grid;
+}
+body {
+    background-color: #272B34;
+}
+
+.barra-lateral-fixa {
+    background-color: #21242C;
+    position: fixed;
+    height: 100vh;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.my-profile {
+    padding-top: 30px;
+    padding-bottom: 200px;
+}
+
+.menu-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-principal i {
+    font-size:40px;
+    color:white;
+    background-color:#21252C;
+    border-color: #21252C;
+}
+
+.menu-principal i:hover {
+    font-size:40px;
+    color: #76F37F;
+    background-color:#21252C;
+    border-color: #176d1c;
+}
+
+.menu-principal a {
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.apresentação {
+    color: white;
+    border: 2px white solid;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+
+}
+
+.apresentação h3 {
+    color: #76F37F;
+    font-size: 30px;
+    font-style: bold;
+    padding-top: 5px;
+}
+
+.apresentacão-p2 {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.to-do {
+    display: flex;
+    flex-direction: column;
+    border: 1px white solid;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.to-do h3 {
+    color: white;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.nova-tarefa {
+    background-color: #383C47;
+    width: 60%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+
+
+#input-nova-tarefa {
+    background-color:#383C47;
+    border: 0;
+    width: 90%;
+    color: white;
+    font-size: 80%;
+
+}
+
+#btn-nova-tarefa {
+    background-color: #383C47;
+    border: 0;
+    font-size: 30px;
+}
+
+#lista-de-tarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+}
+
+
+#lista-de-tarefas li {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 100%;
+}
+
+.edit {
+        font-size:20px;
+        color:white;
+        background-color:#262B34;
+        border-style: solid;
+        border-color: #262B34;
+        
+      }
+
+#feito {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+   
+}
+
+#feito:checked {
+    background-color: #76F37F;
+    border: 5px #18612e solid;
+}
+
+#feito:hover {
+    background-color: #76F37F;
+    border: 5px #18612e solid;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #21242C;
+}
+
+.modal .content {
+    background-color: #176d1c;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
